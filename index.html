@@ -7,10 +7,69 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300,400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="build/css/app.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="bar container">
+        <div class="bar__logo">
+          <p class="bar__name">Viaje</p>
+        </div>
+
+        <nav class="bar__navigation">
+          <a href="#">Lugares para hospedarte</a>
+          <a href="#">Experiencias</a>
+          <a href="#">Experiencias en línea</a>
+        </nav>
+
+        <nav class="bar__login">
+          <a href="#">Hazte Anfitrión</a>
+        </nav>
+      </div>
+
+      <form class="form container">
+        <div class="form__field">
+          <label for="location" class="form__label">Ubicación</label>
+          <input
+            type="text"
+            class="form__input"
+            id="location"
+            placeholder="¿Adónde viajas?"
+          />
+        </div>
+
+        <div class="form__field">
+          <label for="check-in" class="form__label">Llegada</label>
+          <input type="date" class="form__input" id="check-in" />
+        </div>
+
+        <div class="form__field">
+          <label for="check-out" class="form__label">Salida</label>
+          <input type="date" class="form__input" id="check-out" />
+        </div>
+
+        <div class="form__field">
+          <label for="guests" class="form__label">Huéspedes</label>
+          <input
+            type="number"
+            class="form__input"
+            id="guests"
+            placeholder="¿Cuántos?"
+          />
+        </div>
+
+        <div class="form__field">
+          <input type="submit" class="form__submit" value="Buscar" />
+        </div>
+      </form>
+
+      <div class="header__search container">
+        <p class="header__search-label">¿No sabes adónde ir?</p>
+        <a href="#" class="header__search-button">Búsqueda Flexible</a>
+      </div>
+    </header>
+  </body>
 </html>
