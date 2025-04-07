@@ -39,3 +39,17 @@
   gap: $spacing;
   grid-template-columns: repeat($columns, 1fr);
 }
+
+@mixin horizontal-scroll {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+
+  > * {
+    scroll-snap-align: center;
+  }
+
+  @include tablet {
+    overflow: auto;
+  }
+}
