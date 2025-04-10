@@ -20,7 +20,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-webp": "^4.0.1",
     "postcss": "^8.5.3",
-    "sass": "^1.85.1"
+    "sass": "^1.86.3"
   },
   "browserslist": [
     "last 1 version",
