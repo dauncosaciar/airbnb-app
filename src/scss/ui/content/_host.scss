@@ -55,8 +55,10 @@
   &__link {
     @include m.button(v.$white, v.$black);
 
-    border-radius: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    & {
+      border-radius: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
   }
 }
